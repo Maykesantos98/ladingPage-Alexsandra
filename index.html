@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexsandra Moreira | Psicóloga Clínica</title>
+  <meta name="description" content="Psicoterapia individual online com a psicóloga Alexsandra Moreira (TCC). Atendimento acolhedor para ansiedade, depressão, relacionamentos, luto e mudança de comportamento.">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- Animated background -->
+<div class="bg-blobs" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <div class="nav-logo">
+    <div class="nav-logo-icon">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21C7 16 4 12 4 8.5a8 8 0 0116 0C20 12 17 16 12 21z"/>
+      <path d="M9 10.5c.8.8 2 2 3 3.5 1-1.5 2.2-2.7 3-3.5"/>
+    </svg>
+  </div>
+    <span class="nav-logo-text">Alexsandra Moreira<span>.</span></span>
+  </div>
+  <div class="nav-menu">
+    <a href="#sobre">Sobre</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#faq">Dúvidas</a>
+    <a href="#agendamento" class="nav-cta">Agendar sessão</a>
+  </div>
+  <!-- Hamburger — visível só no mobile -->
+  <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Menu mobile overlay -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#sobre" class="mm-link">Sobre</a>
+  <a href="#como-funciona" class="mm-link">Como funciona</a>
+  <a href="#faq" class="mm-link">Dúvidas</a>
+  <a href="#agendamento" class="mm-cta">Agendar sessão →</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-grid">
+    <!-- Text -->
+    <div class="hero-text">
+      <div class="pill-tag">Psicóloga Clínica · CRP 06/137762 · TCC</div>
+      <h1>
+        Mudanças reais<br>
+        começam com<br>
+        <em class="underline-word">pensamentos conscientes</em>.
+      </h1>
+      <p class="hero-desc">
+        Psicoterapia baseada na TCC — Terapia Cognitivo-Comportamental. Atendimento online para todo o Brasil, com sigilo total e compromisso real com o seu processo de mudança.
+      </p>
+      <div class="hero-ctas">
+        <a href="#agendamento" class="btn-main">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Ver horários disponíveis
+        </a>
+        <a href="https://wa.me/5511978669799?text=Olá%20Alexsandra!%20Gostaria%20de%20tirar%20uma%20dúvida." target="_blank" class="btn-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Tirar uma dúvida
+        </a>
+      </div>
+      <div class="hero-social-proof">
+        <div class="avatars">
+          <div class="av av-1">AN</div>
+          <div class="av av-2">MR</div>
+          <div class="av av-3">LC</div>
+        </div>
+        <div>
+          <div class="stars">
+            <svg width="80" height="16" viewBox="0 0 80 16" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 1l1.8 3.6L14 5.3l-3 2.9.7 4.1L8 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7z"/>
+              <path d="M24 1l1.8 3.6L30 5.3l-3 2.9.7 4.1L24 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7z"/>
+              <path d="M40 1l1.8 3.6L46 5.3l-3 2.9.7 4.1L40 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7z"/>
+              <path d="M56 1l1.8 3.6L62 5.3l-3 2.9.7 4.1L56 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7z"/>
+              <path d="M72 1l1.8 3.6L78 5.3l-3 2.9.7 4.1L72 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7z"/>
+            </svg>
+          </div>
+          <span>Quase 10 anos de experiência</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="hero-image-wrap">
+      <div class="hero-image-bg"></div>
+      <div class="hero-image-frame">
+        <img src="./fotos/Perfil.jpeg" 
+             alt="Psicóloga Alexsandra Dias de Oliveira"
+             loading="eager">
+      </div>
+
+      <!-- Float card 1 -->
+      <div class="float-card float-card-1">
+        <div class="fc-icon fc-icon-mint">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B7A3E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="11" width="14" height="10" rx="2"/>
+            <path d="M8 11V7a4 4 0 018 0v4"/>
+            <circle cx="12" cy="16" r="1.2" fill="#6B7A3E"/>
+          </svg>
+        </div>
+        <div class="fc-text">
+          <strong>100% Sigiloso</strong>
+          <span>Ética profissional garantida</span>
+        </div>
+      </div>
+
+      <!-- Float card 2 -->
+      <div class="float-card float-card-2">
+        <div class="fc-icon fc-icon-gold">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A96E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 3c2 4 2 14 0 18M3 12c4 2 14 2 18 0"/>
+            <path d="M4.5 7.5c3 1.5 12 1.5 15 0M4.5 16.5c3-1.5 12-1.5 15 0"/>
+          </svg>
+        </div>
+        <div class="fc-text">
+          <strong>100% Online</strong>
+          <span>Para todo o Brasil</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint">
+    <div class="scroll-mouse">
+      <div class="scroll-dot"></div>
+    </div>
+    <span>Rolar</span>
+  </div>
+</section>
+
+<!-- ── PAIN POINTS ── -->
+<section class="pain-section">
+  <div class="section-wrap">
+    <div class="pain-grid">
+      <div class="pain-left reveal">
+        <div class="label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.8 4.6a5.5 5.5 0 00-7.8 0l-1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 000-7.6z"/>
+          </svg>
+          Para quem é
+        </div>
+        <h2>Você não precisa<br>carregar tudo isso<br><em>sozinho(a)</em>.</h2>
+        <p class="section-sub" style="text-align:left;margin-left:0;margin-top:1.25rem;">
+          Reconhecer que algo não está bem e buscar ajuda é um ato de coragem. A psicoterapia com base na TCC é um espaço seguro para compreender seus padrões e transformar pensamentos em ações.
+        </p>
+        <div class="pain-quote">
+          "A terapia pode ser o espaço seguro que você precisa para explorar suas emoções e encontrar soluções para seus desafios."
+        </div>
+        <a href="https://wa.me/5511978669799" target="_blank" class="cta-link">
+          Conversar com a psicóloga
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <div class="pain-cards">
+        <div class="pain-card reveal reveal-delay-1">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B7A3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 4c-4.4 0-8 3.1-8 7 0 2.3 1.2 4.3 3 5.7V20l3-2h2c4.4 0 8-3.1 8-7s-3.6-7-8-7z"/>
+              <path d="M8.5 11h.5m5.5 0h.5M10 14c.5.5 1 .8 2 .8s1.5-.3 2-.8" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <p>Sente que a <strong>ansiedade</strong> domina sua rotina — pensamentos acelerados, preocupação constante e dificuldade de relaxar.</p>
+        </div>
+        <div class="pain-card reveal reveal-delay-2">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B7A3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.8 4.6a5.5 5.5 0 00-7.8 0l-1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.8 1-1a5.5 5.5 0 000-7.8z"/>
+              <path d="M12 6l-1.5 3 2 1.5-1.5 3" stroke="#C9A96E"/>
+            </svg>
+          </div>
+          <p>Está enfrentando <strong>conflitos de casal</strong> ou dificuldades nos relacionamentos familiares e profissionais.</p>
+        </div>
+        <div class="pain-card reveal reveal-delay-3">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B7A3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 17.6A5 5 0 0018 8h-1.3A7 7 0 104 14.5"/>
+              <path d="M8 19v2M12 17v2M16 19v2" stroke="#C9A96E" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <p>Vivencia tristeza persistente, <strong>depressão</strong> ou está atravessando um processo de <strong>luto</strong> e perda.</p>
+        </div>
+        <div class="pain-card reveal reveal-delay-4">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B7A3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 3l4 4-4 4"/>
+              <path d="M3 7h18"/>
+              <path d="M7 21l-4-4 4-4"/>
+              <path d="M21 17H3"/>
+            </svg>
+          </div>
+          <p>Busca uma <strong>mudança de comportamento</strong> e estilo de vida, mas sente dificuldade de manter a consistência.</p>
+        </div>
+        <div class="pain-card reveal reveal-delay-5">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B7A3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="10.5" cy="10.5" r="6.5"/>
+              <path d="M15.5 15.5L21 21"/>
+              <path d="M8.5 10.5h4M10.5 8.5v4" stroke="#C9A96E"/>
+            </svg>
+          </div>
+          <p>Deseja desenvolver <strong>autossuficiência emocional</strong> — se conhecer melhor, resgatar a autoestima e tomar decisões com clareza.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section class="about-section" id="sobre">
+  <div class="section-wrap">
+    <div class="about-grid">
+      <div class="about-image-area reveal">
+        <div class="about-img-border"></div>
+        <div class="about-img">
+          <img src="./fotos/Perfil.jpeg" alt="Alexsandra Dias de Oliveira, Psicóloga Clínica">
+        </div>
+        <div class="credential-bar">
+          <span>Alexsandra Moreira</span>
+          <span class="crp-badge">CRP 06/137762</span>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-2">
+        <div class="label">Sobre mim</div>
+        <h2>Olá, eu sou<br><em>Alexsandra Moreira</em></h2>
+        <p>Escolher iniciar a terapia não é simples. Muitas vezes essa decisão vem depois de noites mal dormidas, pensamentos acelerados, conflitos internos ou da sensação de estar tentando dar conta de tudo sozinho(a).</p>
+        <p>Sou psicóloga formada há quase 10 anos e, ao longo dessa trajetória, tenho acompanhado pessoas em momentos delicados da vida — crises de ansiedade, inseguranças nos relacionamentos, sobrecarga emocional, dificuldades familiares e fases de grandes mudanças.</p>
+        <p>Meu compromisso é oferecer mais do que um atendimento: é proporcionar um espaço seguro, ético e verdadeiramente acolhedor, onde você possa falar sem medo de julgamentos e, principalmente, se sentir compreendido(a). A terapia não é sobre fraqueza — é sobre coragem.</p>
+        <div class="about-values">
+          <div class="value-item">
+            <div class="vi-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A8B878" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <strong>Acolhimento</strong>
+            <span>Escuta ativa e sem julgamentos</span>
+          </div>
+          <div class="value-item">
+            <div class="vi-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A8B878" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="11" width="14" height="10" rx="2"/>
+                <path d="M8 11V7a4 4 0 018 0v4"/>
+                <circle cx="12" cy="16" r="1.3" fill="#A8B878"/>
+              </svg>
+            </div>
+            <strong>Sigilo Total</strong>
+            <span>Ética profissional garantida</span>
+          </div>
+          <div class="value-item">
+            <div class="vi-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A8B878" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-5 8-11a8 8 0 10-16 0c0 6 8 11 8 11z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <strong>+10 anos</strong>
+            <span>Experiência em acompanhamento terapêutico</span>
+          </div>
+          <div class="value-item">
+            <div class="vi-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A8B878" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-7 10 7"/>
+                <path d="M6 10v8a2 2 0 002 2h8a2 2 0 002-2v-8"/>
+                <path d="M10 22v-6h4v6"/>
+              </svg>
+            </div>
+            <strong>TCC</strong>
+            <span>Terapia Cognitivo-Comportamental</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║              DEPOIMENTOS — EDITE AQUI                       ║
+  ║                                                             ║
+  ║  Para adicionar ou editar depoimentos, basta mexer no       ║
+  ║  array DEPOIMENTOS abaixo. O carrossel se monta sozinho.    ║
+  ║                                                             ║
+  ║  Cada depoimento tem:                                       ║
+  ║    texto  → o que o paciente disse                          ║
+  ║    nome   → primeiro nome + inicial  (ex: "Maria S.")       ║
+  ║    tipo   → "Atendimento Online" ou "Atendimento Presencial"║
+  ║    foto   → caminho da imagem (opcional, ex: "fotos/a.jpg") ║
+  ║    cor    → cor do avatar quando não há foto                ║
+  ║                                                             ║
+  ║  ⚠️  ÉTICA CFP: use apenas primeiro nome + inicial,        ║
+  ║      nunca mencione diagnósticos, e tenha autorização       ║
+  ║      por escrito do paciente antes de publicar.             ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<section class="test-section">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <div class="label">Depoimentos</div>
+      <h2>O que dizem <em>os pacientes</em></h2>
+      <p class="section-sub">Histórias reais de quem deu o primeiro passo e descobriu o que é se sentir verdadeiramente acolhido(a).</p>
+    </div>
+  </div>
+  <div class="test-track-wrap">
+    <div class="test-track" id="testTrack">
+      <!-- Gerado automaticamente pelo script DEPOIMENTOS abaixo -->
+    </div>
+  </div>
+</section>
+
+  <script src="js/depoimentos.js"></script>
+
+<!-- ── HOW IT WORKS ── -->
+<section class="how-section" id="como-funciona">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <div class="label">Como funciona</div>
+      <h2>3 passos simples para<br>começar sua <em>jornada</em></h2>
+      <p class="section-sub">Dar o primeiro passo é mais fácil do que parece. Estou aqui para tornar esse processo simples e acolhedor.</p>
+    </div>
+
+    <div class="steps-row">
+
+      <!-- Linha conectora desenhada em SVG — posicionada precisamente entre os círculos -->
+      <div class="steps-connector" aria-hidden="true">
+        <svg width="100%" height="4" preserveAspectRatio="none" viewBox="0 0 100 4" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#6B7A3E"/>
+              <stop offset="100%" stop-color="#C9A96E"/>
+            </linearGradient>
+          </defs>
+          <line x1="0" y1="2" x2="100" y2="2" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="4 3"/>
+        </svg>
+      </div>
+
+      <div class="step-item step-1 reveal">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>O Contato</h3>
+          <p>Você me envia uma mensagem pelo WhatsApp. Conversamos para entender sua necessidade e tirar suas dúvidas, sem compromisso.</p>
+        </div>
+      </div>
+
+      <div class="step-item step-2 reveal reveal-delay-2">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>O Agendamento</h3>
+          <p>Escolhemos juntos o dia e horário ideal na agenda para o nosso primeiro encontro, de acordo com a sua disponibilidade.</p>
+        </div>
+      </div>
+
+      <div class="step-item step-3 reveal reveal-delay-4">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>A Sessão</h3>
+          <p>Em um ambiente sigiloso, acolhedor e seguro, iniciamos juntos a sua jornada de cuidado emocional.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── MODALITIES ── -->
+<section class="modal-section">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <div class="label">Serviços</div>
+      <h2>Atendimentos pensados<br>para <em>você</em></h2>
+    </div>
+    <div class="modal-cards">
+      <div class="modal-card mc-online reveal">
+        <div class="mc-pattern"></div>
+        <div class="mc-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="13" rx="2"/>
+            <path d="M8 21h8M12 17v4"/>
+            <path d="M7 9.5c1.5 0 3 1 5 1s3.5-1 5-1" stroke="rgba(255,255,255,0.5)"/>
+          </svg>
+        </div>
+        <h3>Terapia Individual</h3>
+        <p>Sessões individuais pelo Google Meet ou plataforma de sua preferência. De qualquer lugar do Brasil, sem deslocamento — com a mesma qualidade, sigilo e ética do atendimento presencial.</p>
+        <div class="mc-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2c3 4 3 16 0 20M2 12h20"/></svg>
+          Disponível para todo o Brasil
+        </div>
+      </div>
+      <div class="modal-card mc-presencial reveal reveal-delay-2">
+        <div class="mc-pattern"></div>
+        <div class="mc-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B7A3E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.8 4.6a5.5 5.5 0 00-7.8 0l-1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 000-7.8z"/>
+            <path d="M9 10.5c.8.8 2 2 3 3.5 1-1.5 2.2-2.7 3-3.5" stroke="#C4A35A"/>
+          </svg>
+        </div>
+        <h3>Terapia de Casal</h3>
+        <p>Espaço seguro para casais trabalharem conflitos de comunicação, crises de relacionamento e reconexão emocional, com mediação técnica e sem julgamentos.</p>
+        <div class="mc-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2c3 4 3 16 0 20M2 12h20"/></svg>
+          Online para todo o Brasil
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SCHEDULE ── -->
+<section class="schedule-section" id="agendamento">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <div class="label">Agenda</div>
+      <h2>Agende sua sessão <em>agora</em></h2>
+      <p class="section-sub">Ou fale direto pelo WhatsApp para agendar sua primeira sessão com agilidade.</p>
+    </div>
+    <div class="schedule-card reveal">
+      <div class="schedule-header">
+        <div class="schedule-header-text">
+          <h3>Agenda — Alexsandra Moreira</h3>
+          <p>Atendimento 100% online · Sessões de 50 minutos</p>
+        </div>
+        <div class="schedule-live">
+          <div class="live-dot"></div>
+          Horários disponíveis
+        </div>
+      </div>
+      <div class="schedule-iframe-wrap">
+        <iframe src="https://calendar.google.com/calendar/u/0/r" title="Agenda da Psicóloga Alexsandra Moreira" loading="lazy"></iframe>
+      </div>
+      <div class="schedule-footer">
+        <span>Não encontrou um horário?</span>
+        <a href="https://wa.me/5511978669799?text=Olá!%20Não%20encontrei%20um%20horário%20na%20agenda." target="_blank">Fale diretamente no WhatsApp</a>
+        <span>e encontramos uma solução.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq-section" id="faq">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <div class="label">Dúvidas frequentes</div>
+      <h2>Perguntas que<br>costumam <em>surgir</em></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq">
+        <summary>Qual a duração das sessões?<span class="faq-arrow">+</span></summary>
+        <div class="faq-body">As sessões têm duração média de 50 minutos e costumam ocorrer semanalmente. A frequência pode ser ajustada de acordo com a avaliação da necessidade terapêutica nos primeiros encontros.</div>
+      </details>
+      <details class="faq">
+        <summary>Você atende por plano de saúde?<span class="faq-arrow">+</span></summary>
+        <div class="faq-body">Os atendimentos são particulares. Porém, emito recibo com todos os dados necessários para que você possa solicitar reembolso junto ao seu convênio — verifique as regras específicas do seu plano.</div>
+      </details>
+      <details class="faq">
+        <summary>A terapia online funciona igual à presencial?<span class="faq-arrow">+</span></summary>
+        <div class="faq-body">Sim! Estudos científicos demonstram que a eficácia é equivalente. O essencial é que você esteja em um ambiente tranquilo, com boa conexão de internet, onde se sinta à vontade para conversar com privacidade.</div>
+      </details>
+      <details class="faq">
+        <summary>O que é discutido nas sessões fica em sigilo?<span class="faq-arrow">+</span></summary>
+        <div class="faq-body">Absolutamente. O sigilo profissional é um dever ético e legal da psicóloga, garantido pelo Código de Ética Profissional do Psicólogo (CEPP) e pelo Conselho Federal de Psicologia. Tudo que é compartilhado nas sessões permanece estritamente confidencial.</div>
+      </details>
+      <details class="faq">
+        <summary>Quanto tempo dura o processo terapêutico?<span class="faq-arrow">+</span></summary>
+        <div class="faq-body">A duração varia de pessoa para pessoa, de acordo com os objetivos e a demanda de cada uma. Alguns benefícios são percebidos em poucos meses; outros processos são mais longos. O ritmo é sempre respeitoso com a sua jornada única.</div>
+      </details>
+      <details class="faq">
+        <summary>Como funciona o primeiro atendimento?<span class="faq-arrow">+</span></summary>
+        <div class="faq-body">A primeira sessão é uma conversa inicial de acolhimento, onde nos conhecemos, você compartilha o que te trouxe até aqui e alinhamos juntos como podemos trabalhar. É um espaço livre, sem expectativas — você pode ser você mesma(o).</div>
+      </details>
+    </div>
+
+    <!-- CFP Ethics compliance note -->
+    <div class="ethics-note">
+      <span class="ethics-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B7A3E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 8v4M12 16h.01"/>
+        </svg>
+      </span>
+      <p>Em conformidade com o Código de Ética Profissional do Psicólogo (CEPP) e a Nota Técnica CFP nº 1/2022. CRP 06/137762 — Alexsandra Moreira. A psicoterapia não substitui atendimento psiquiátrico quando indicado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BANNER ── -->
+<section class="cta-banner">
+  <div class="cta-inner">
+    <h2>O cuidado que você merece<br>começa com <em style="color:#A8B878;font-style:italic;">um passo</em>.</h2>
+    <p>Você chegou até aqui porque uma parte de você já sabe que é hora de agir. Pensamentos conscientes geram mudanças reais. Dê esse passo — estou aqui para caminhar com você.</p>
+    <div class="cta-btns">
+      <a href="#agendamento" class="btn-cta-main">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Agendar minha sessão
+      </a>
+      <a href="https://wa.me/5511978669799?text=Olá! Gostaria de começar minha jornada." target="_blank" class="btn-cta-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer id="contato">
+  <div class="footer-wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Alexsandra Moreira</div>
+        <div class="footer-brand-crp">Psicóloga Clínica · CRP 06/137762</div>
+        <p>Psicoterapia baseada na TCC, com ética, humanidade e respeito pela singularidade de cada pessoa. Atendimento 100% online para todo o Brasil.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li>
+            <a href="https://wa.me/5511978669799" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              (11) 97866-9799
+            </a>
+          </li>
+          <li>
+            <a href="mailto:alexsandra.moreira.psi@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              alexsandra.moreira.psi@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Atendimento 100% Online — Brasil
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li>
+            <a href="https://instagram.com/alexsandramoreirapsi" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @alexsandramoreirapsi
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">
+        <p>© 2026 Alexsandra Moreira · Todos os direitos reservados.</p>
+        <p style="margin-top:0.25rem;">CRP 06/137762 · Em conformidade com o CEPP e a Nota Técnica CFP nº 1/2022.</p>
+      </div>
+      <div class="footer-crisis">
+        <strong>Em caso de crise suicida ou emergência:</strong> ligue para o CVV no <a href="tel:188">188</a> (24h, gratuito) ou vá ao pronto-socorro mais próximo. A psicoterapia não substitui atendimento psiquiátrico quando necessário.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── WHATSAPP BUTTON ── -->
+<a href="https://wa.me/5511978669799?text=Olá%20Alexsandra!%20Gostaria%20de%20agendar%20uma%20sessão." target="_blank" class="wa-btn" aria-label="Falar no WhatsApp">
+  <div class="wa-ring"></div>
+  <span class="wa-tooltip">Fale comigo agora 💬</span>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ── SCRIPTS ── -->
+  <script src="js/main.js"></script>
+</body>
+</html>
