@@ -3,75 +3,67 @@
 
 ---
 
-## 📁 Estrutura de arquivos
+## Estrutura de arquivos
 
 ```
-alexsandra/
-│
-├── index.html            → Página principal (HTML limpo)
-├── css/
-│   └── estilos.css       → Estilos, cores, animações e responsividade
-├── js/
-│   ├── depoimentos.js    → ✏️  EDITE AQUI os depoimentos
-│   └── main.js           → Comportamentos: nav, scroll, FAQ
-└── fotos/
-    └── (fotos dos pacientes para os depoimentos)
-```
-
----
-
-## ✏️ Como adicionar depoimentos
-
-Abra `js/depoimentos.js` e edite o array `DEPOIMENTOS`.
-
-**Sem foto:**
-```js
-{
-  texto: "Depoimento do paciente.",
-  nome: "Maria S.",
-  tipo: "Atendimento Online",
-  cor: "linear-gradient(135deg, #8A9A50, #6B7A3E)"
-},
-```
-
-**Com foto:**
-```js
-{
-  texto: "Depoimento do paciente.",
-  nome: "João P.",
-  tipo: "Atendimento Online",
-  foto: "fotos/joao.jpg"
-},
+ladingPage-Alexsandra/
+|
+|-- index.html            -> Página principal
+|-- css/
+|   `-- estilos.css       -> Estilos, responsividade e animações
+|-- js/
+|   |-- main.js           -> Comportamentos (menu, scroll, FAQ, botão topo)
+|   `-- depoimentos.js    -> Script dos depoimentos (desativado no HTML)
+`-- fotos/
+    `-- Perfil.jpeg       -> Foto principal
 ```
 
 ---
 
-## 📋 Checklist antes de publicar
+## Estado atual do projeto
+
+- Fluxo de conversão: **somente WhatsApp** (sem agenda incorporada no site).
+- Menu: transparente no topo, sólido ao rolar, esconde ao descer e volta ao subir.
+- Botões fixos: WhatsApp + botão para voltar ao início.
+- Seção de depoimentos: **temporariamente desativada** no `index.html`, com código preservado para reativação futura.
+
+---
+
+## Checklist antes de publicar
 
 | Item | Status |
 |------|--------|
-| CRP 06/137762 | ✅ Atualizado |
-| WhatsApp (11) 97869-9799 | ✅ Atualizado |
-| E-mail alexsandra.moreira.psi@gmail.com | ✅ Atualizado |
-| Instagram @alexsandramoreirapsi | ✅ Atualizado |
-| Atendimento 100% Online | ✅ Atualizado |
-| Abordagem TCC | ✅ Atualizado |
-| Cores Verde Oliva | ✅ Atualizado |
-| Google Agenda | ⚠️  Substituir pelo link real da sua agenda pública |
-| Foto da psicóloga | ⚠️  Atualizar caminho da foto no index.html |
-| Depoimentos reais | ⚠️  Editar js/depoimentos.js |
+| CRP 06/137762 | OK |
+| WhatsApp (11) 97866-9799 | OK |
+| E-mail alexsandra.moreira.psi@gmail.com | OK |
+| Instagram @alexsandramoreirapsi | OK |
+| Atendimento 100% online | OK |
+| Abordagem TCC | OK |
+| Links externos com segurança (`rel`) | OK |
+| Agenda no site | Removida (intencional) |
+| Depoimentos | Desativados (intencional) |
 
 ---
 
-## 🌐 Como publicar
+## Como reativar depoimentos no futuro
 
-**Netlify (grátis):** arraste a pasta no netlify.com — HTTPS automático em segundos.
+No `index.html`, remova o bloco de comentário entre:
 
-**Hostinger / KingHost:** envie via FTP ou Gerenciador de Arquivos.
+- `TESTIMONIALS TEMPORARILY DISABLED`
+- `END TESTIMONIALS TEMPORARILY DISABLED`
 
-## 🔧 Testar localmente
+Depois disso, confira se o `<script src="js/depoimentos.js"></script>` permanece ativo.
+
+---
+
+## Publicação rápida
+
+- Netlify: arraste a pasta do projeto para o painel.
+- Hospedagem tradicional: envie os arquivos via FTP/Gerenciador de Arquivos.
+
+## Testar localmente
 
 ```bash
-python3 -m http.server 8080
+python -m http.server 8080
 # Acesse: http://localhost:8080
 ```
